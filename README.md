@@ -67,7 +67,7 @@ To run Learn locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/learn.git
+   git clone https://github.com/oduyemi/learn.git
    ```
 
 2. Navigate to the project directory:
@@ -104,6 +104,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or support, please contact the project maintainer at [maintainer@example.com](mailto:maintainer@example.com).
-
----
+For any inquiries or support, please contact the project maintainer at [support@progrowing.org](mailto:support@progrowing.org).
