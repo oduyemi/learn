@@ -49,9 +49,11 @@ export const AboutBanner = () => {
                             Learning Center, and the ProGrowing Forum, we offer lots of hands-on
                             experience to ensure you are well-rounded in the track of your choice.
                         </Typography>
-                        <Link to="">
-                            <Button>Learn More</Button>
-                        </Link>
+                        <Box className="text-center">
+                            <Link to="">
+                                <Button>Learn More</Button>
+                            </Link>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
