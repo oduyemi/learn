@@ -13,39 +13,35 @@ export const AboutBanner = () => {
                 <Box className="col-start-1 row-start-1 bg-gray-800 bg-opacity-70 w-full h-full"></Box>
                 <Box className="col-start-1 row-start-1 mx-auto my-auto">
                     <h1 className="font-bold text-2xl">About</h1>
-                    <p>Something interesting about hero message</p>
+                    <p>Learning Center</p>
                 </Box>
             </Box>
 
 
             <Box margin="10px" className="container-xxl py-5">
                 <Box className="container mx-auto">
-                    <Box className="wow fadeInUp" data-wow-delay="0.3s">
-                        <h6 className="bg-white text-blu text-start px-3 py-1 mt-3">About Us</h6>
-                        <Typography 
-                            variant="h1" 
-                            className="mb-4 text-yel"
-                            gutterBottom
-                            sx={{
-                                fontWeight: 500,
-                                fontSize: "xx-large"
-                            }}
-                        >
-                            Learning Center
-                        </Typography>
+                    <Box maxWidth="md" className="wow fadeInUp mx-auto" data-wow-delay="0.3s">
                         <Typography
                             variant="h6"
                             className="mb-4 text-black"
                             paragraph
-                            sx={{fontSize: "16px", fontWeight: 400}}
+                            sx={{fontSize: "18px", fontWeight: 400}}
                         >
-                            Imagine learning in an environment built to give you the best learning experience.
+                            <i>Imagine learning in an environment built to give you the best learning experience.</i>
+                            <br/><br/>
+                            ProGrowing is a web platform where tech people looking for experienced colleagues
+                            to mentor them can find and book sessions with mentors for free and get
+                            mentored. On ProGrowing, as a tech person, you can browse
+                            the list of available mentors. You will see a list of mentors in the chosen
+                            field and their next live mentorship sessions. You can then, book a session.
+                            <br/>
+
                         </Typography>
                         <Typography
                             variant="h6" 
                             paragraph
                             className="mb-4 text-black"
-                            sx={{fontSize: "16px", fontWeight: 400}}
+                            sx={{fontSize: "18px", fontWeight: 400}}
                         >
                             ProGrowing is an initiative aimed at mentoring programmers, teaching them both
                             soft and hard skills required to help navigate their tech career better.

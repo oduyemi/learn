@@ -8,7 +8,6 @@ const About = () => {
     return(
         <>
             <AboutBanner />
-            <Features />
             <Footer />
         </>
     )
