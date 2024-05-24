@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Button from "./elements/Button";
-import { Link } from "react-router-dom";
+
 
 
 
@@ -27,21 +26,24 @@ export const AboutBanner = () => {
                             paragraph
                             sx={{fontSize: "18px", fontWeight: 400}}
                         >
-                            <i>Imagine learning in an environment built to give you the best learning experience.</i>
-                            <br/><br/>
-                            ProGrowing is a web platform where tech people looking for experienced colleagues
-                            to mentor them can find and book sessions with mentors for free and get
-                            mentored. On ProGrowing, as a tech person, you can browse
-                            the list of available mentors. You will see a list of mentors in the chosen
-                            field and their next live mentorship sessions. You can then, book a session.
-                            <br/>
+                            Welcome to ProGrowing, where innovation meets mentorship.
 
+
+                            <br/><br/>
+                            At ProGrowing, we believe in the transformative power of creativity and individuality.
+                            Founded with the vision of fostering a community where developers and designers can
+                            thrive, we aim to cultivate an environment that encourages innovation, mentorship,
+                            and continuous growth.
+                            <br/>
                         </Typography>
+
+
                         <Typography
                             variant="h6" 
                             paragraph
                             className="mb-4 text-black"
                             sx={{fontSize: "18px", fontWeight: 400}}
+                            gutterBottom
                         >
                             ProGrowing is an initiative aimed at mentoring programmers, teaching them both
                             soft and hard skills required to help navigate their tech career better.
@@ -49,11 +51,43 @@ export const AboutBanner = () => {
                             Learning Center, and the ProGrowing Forum, we offer lots of hands-on
                             experience to ensure you are well-rounded in the track of your choice.
                         </Typography>
-                        <Box className="text-center">
-                            <Link to="">
-                                <Button>Learn More</Button>
-                            </Link>
+                     
+                    </Box>
+                    <Box className="mt-6">
+                    <Box 
+                        sx={{display:"flex", justifyContent: "center", alignItems: "center"}}
+                        className="mx-auto"
+                    >
+                        <Box margin="10px" maxWidth="sm">
+                            <img src={require("../assets/images/photos/dev1.jpg")} alt="dev" />
                         </Box>
+
+                        <Box maxWidth="sm">
+                            <Typography 
+                                variant="h1" 
+                                className="font-semibold animate__animated animated__pulse text-ppl pl-2 tracking-wide"
+                                sx={{ fontSize: "xx-large" }}
+                                gutterBottom
+                            >
+                                Our
+                                <span><h1 className="text-yel inline"> Mission</h1></span>
+                            </Typography>
+                            <Typography
+                                variant="h6" 
+                                paragraph
+                                className="mb-4 text-black"
+                                sx={{fontSize: "18px", fontWeight: 400}}
+                                margin="10px"
+                            >
+                                Our mission is simple: to inspire and empower individuals
+                                to harness their unique talents and creative potential.
+                                We provide a platform where seasoned professionals and
+                                budding talents come together, share knowledge, and push
+                                the boundaries of what's possible.
+                            </Typography>
+                        </Box>
+                        
+                    </Box>
                     </Box>
                 </Box>
             </Box>
