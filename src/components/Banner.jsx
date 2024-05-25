@@ -50,9 +50,9 @@ export const Banner = () => {
                                             Read More
                                         </Button>
                                     </Link>
-                                    <Link to="/dashboard" >
+                                    <Link to="/login" >
                                         <Button className="md:py-4 sm:py-2 md:px-8 sm:px-6 upped topic animate__animated animate__slideInRight">
-                                            Join Now
+                                            Login
                                         </Button>
                                     </Link>
                                 </Box>
