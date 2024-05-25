@@ -10,7 +10,7 @@ export const ContactBlock = () => {
         <Box className="max-w-screen-lg mx-auto p-5">
             <Box className="grid grid-cols-1 md:grid-cols-12 border">
                 <Box className="bg-ppl md:col-span-4 p-10 text-white">
-                    <p className="mt-4 text-sm leading-7 font-regular uppercase">
+                    <p className="mt-4 text-blu text-sm leading-7 font-regular uppercase">
                         Contact
                     </p>
                     <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
