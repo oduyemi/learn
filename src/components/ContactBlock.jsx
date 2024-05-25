@@ -17,18 +17,19 @@ export const ContactBlock = () => {
                         Get In <span className="text-yel">Touch</span>
                     </h3>
                     <p className="mt-4 leading-7 text-gray-200">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
+                        We'd love to hear from you! Whether you're curious about
+                        our dedicated ProGrowing features or you just want to 
+                        share your tech journey with us.
                     </p>
 
                     <Box className="flex items-center mt-5">
-                        <span className="text-sm">House #14, Street #12, Darulaman Road, Kabul, Afghanistan.</span>
+                        <span className="text-sm">Share your excitement with us.</span>
                     </Box>
                     <Box className="flex items-center mt-5">
-                        <span className="text-sm">+93 749 99 65 50</span>
+                        <span className="text-sm">support@progrowing.org</span>
                     </Box>
                     <Box className="flex items-center mt-5">
-                        <span className="text-sm">24/7</span>
+                        <span className="text-sm">Quick response time.</span>
                     </Box>
 
                 </Box>
