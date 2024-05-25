@@ -111,6 +111,10 @@ body{
   }
 
 
+  .middlebox{
+    flex-direction: column;
+  }
+
   .title{
     font-size: small !important;
   }

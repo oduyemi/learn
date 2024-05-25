@@ -56,7 +56,7 @@ export const AboutBanner = () => {
                     <Box className="mt-6">
                     <Box 
                         sx={{display:"flex", justifyContent: "center", alignItems: "center"}}
-                        className="mx-auto"
+                        className="mx-auto middlebox"
                     >
                         <Box margin="10px" maxWidth="sm">
                             <img src={require("../assets/images/photos/dev1.jpg")} alt="dev" />
