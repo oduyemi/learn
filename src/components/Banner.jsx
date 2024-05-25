@@ -90,9 +90,9 @@ export const Banner = () => {
                                             Read More
                                         </Button>
                                     </Link>
-                                    <Link to="/join" >
+                                    <Link to="/login" >
                                         <Button className="md:py-4 sm:py-2 md:px-8 sm:px-6 topic upped animate__animated animate__slideInRight">
-                                            Join Now
+                                            Login
                                         </Button>
                                     </Link>
                                 </Box>
