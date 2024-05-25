@@ -12,7 +12,7 @@ export const AboutBanner = () => {
                 <Box className="col-start-1 row-start-1 bg-gray-800 bg-opacity-70 w-full h-full"></Box>
                 <Box className="col-start-1 row-start-1 mx-auto my-auto">
                     <h1 className="font-bold text-2xl">About</h1>
-                    <p>Learning Center</p>
+                    <p className="text-yel">Learning Center</p>
                 </Box>
             </Box>
 
