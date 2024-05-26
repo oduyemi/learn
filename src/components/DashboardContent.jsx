@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useContext} from "react";
 import { UserContext } from "../UserContext";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
@@ -9,6 +9,36 @@ import { CoursesPage } from "./CoursesPage";
 
 
 export const DashboardContent = () => {
+    const { user, handleLogout } = useContext(UserContext);
+    const [flashMessage, setFlashMessage] = useState(null)
+    const [userDetails, setUserDetails] = useState({
+        userID: "",
+        fname: "",
+        lname: "",
+        username: "",
+        email: "",
+        phone: "",
+        img: ""
+    });
+
+    useEffect(() => {
+        if (!user) {
+            setFlashMessage({
+                type: "error",
+                message: "You need to login first!",
+            });
+            window.location.href="/admin/signin";
+        } else {
+            setUserDetails({
+                userID: user.userID || "",
+                fname: user.fname || "",
+                lname: user.lname || "",
+                email: user.email || "",
+                phone: user.phone || "",
+                username: user.username || ""
+            });
+            }
+        }, [user]);
 
     return (
         <Box className="flex">
