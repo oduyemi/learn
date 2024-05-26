@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { UserContext } from "../UserContext";
+import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import Button from "./elements/Button";
-import { Link } from "react-router-dom";
 import { CoursesPage } from "./CoursesPage";
 
 
@@ -47,9 +47,9 @@ export const DashboardContent = () => {
                         </svg>
                         <span className="font-semibold">Setting</span>
                         </li>
-                            
-                        <Button onClick={handleLogout}>Logout</Button>
-
+                        <Link to="/logout" >
+                            <Button>Logout</Button>
+                        </Link>
                     </ul>
                 </Box>
             </Box>
