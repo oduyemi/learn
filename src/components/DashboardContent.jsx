@@ -47,9 +47,9 @@ export const DashboardContent = () => {
                         </svg>
                         <span className="font-semibold">Setting</span>
                         </li>
-                        <Link to="https://progrowing.org/">
-                            <Button onClick={handleLogout}>Logout</Button>
-                        </Link>
+                            
+                        <Button onClick={handleLogout}>Logout</Button>
+
                     </ul>
                 </Box>
             </Box>
