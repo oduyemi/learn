@@ -99,7 +99,7 @@ export const AboutBanner = () => {
                     </Box>
 
                     <ContentFiller />
-                    
+
                 </Box>
                 
                 {/* <Box 
