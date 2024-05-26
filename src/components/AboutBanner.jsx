@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Typewriter } from "./Typewriter";
 import { WhatWeDo } from "./WhatWeDo";
 import { ContentFiller } from "./ContentFiler"
 
@@ -22,14 +23,16 @@ export const AboutBanner = () => {
             <Box margin="10px" className="container-xxl py-5">
                 <Box className="container mx-auto">
                     <Box maxWidth="md" className="wow fadeInUp mx-auto" data-wow-delay="0.3s">
+                        <div className="typewriter-container flex justify-center items-center mt-6">
+                            <Typewriter />
+                        </div>
                         <Typography
                             variant="h6"
                             className="mb-4 text-black"
                             paragraph
                             sx={{fontSize: "18px", fontWeight: 400}}
                         >
-                            <i>Welcome to ProGrowing, where innovation meets mentorship.</i>
-                            <br/><br/>
+                            <br/>
                             At ProGrowing, we believe in the transformative power of creativity and individuality.
                             Founded with the vision of fostering a community where developers and designers can
                             thrive, we aim to cultivate an environment that encourages innovation, mentorship,

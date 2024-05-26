@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./elements/Button";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
