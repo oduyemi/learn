@@ -56,46 +56,52 @@ export const AboutBanner = () => {
                     <Box className="mt-6">
                         <WhatWeDo />                        
                     </Box>
-                    <Box className="mx-auto">
-                        <Box maxWidth="md" className="mx-auto">
-                            <Typography 
-                                variant="h1" 
-                                className="font-semibold animate__animated animated__pulse text-ppl pl-2 tracking-wide"
-                                sx={{ fontSize: "xx-large" }}
-                                gutterBottom
-                            >
-                                Our
-                                <span><h1 className="text-yel inline"> Values</h1></span>
-                            </Typography>
-                            <Typography
-                                variant="h6" 
-                                paragraph
-                                className="mb-4 text-black"
-                                sx={{fontSize: "18px", fontWeight: 400}}
-                                margin="10px"
-                            >
-                                <b>Creativity</b><br/>
-                                We champion creativity and encourage our members to
-                                think outside the box. No two projects should be the
-                                same; we believe in the power of unique perspectives
-                                and original ideas.<br/><br/>
 
-                                <b>Collaboration</b><br/>
-                                Collaboration is at the core of what we do. We bring
-                                together individuals from diverse backgrounds and
-                                expertise, fostering a collaborative spirit that
-                                drives innovation and growth.<br/><br/>
+                    <Box className="mt-6">
+                        <Box className="mx-auto">
+                            <Box maxWidth="md" className="mx-auto">
+                                <Typography 
+                                    variant="h1" 
+                                    className="font-semibold animate__animated animated__pulse text-ppl pl-2 tracking-wide"
+                                    sx={{ fontSize: "xx-large" }}
+                                    gutterBottom
+                                >
+                                    Our
+                                    <span><h1 className="text-yel inline"> Values</h1></span>
+                                </Typography>
+                                <Typography
+                                    variant="h6" 
+                                    paragraph
+                                    className="mb-4 text-black"
+                                    sx={{fontSize: "18px", fontWeight: 400}}
+                                    margin="10px"
+                                >
+                                    <b>Creativity</b><br/>
+                                    We champion creativity and encourage our members to
+                                    think outside the box. No two projects should be the
+                                    same; we believe in the power of unique perspectives
+                                    and original ideas.<br/><br/>
 
-                                <b>Growth</b><br/>
-                                Continuous growth is essential. Whether it&apos;s
-                                through mentorship, projects, or community engagement,
-                                we are committed to helping our members grow both
-                                personally and professionally.<br/><br/>
-                            </Typography>
-                        </Box>                    
+                                    <b>Collaboration</b><br/>
+                                    Collaboration is at the core of what we do. We bring
+                                    together individuals from diverse backgrounds and
+                                    expertise, fostering a collaborative spirit that
+                                    drives innovation and growth.<br/><br/>
+
+                                    <b>Growth</b><br/>
+                                    Continuous growth is essential. Whether it&apos;s
+                                    through mentorship, projects, or community engagement,
+                                    we are committed to helping our members grow both
+                                    personally and professionally.<br/><br/>
+                                </Typography>
+                            </Box>                    
+                        </Box>
                     </Box>
+
                     <ContentFiller />
+                    
                 </Box>
+                
                 {/* <Box 
                             sx={{display:"flex", justifyContent: "center", alignItems: "center"}}
                             className="mx-auto middlebox"
