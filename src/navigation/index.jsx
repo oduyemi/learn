@@ -8,7 +8,7 @@ import Contact from "../pages/Contact";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
-import { Logout } from "@mui/icons-material";
+import Logout from "../pages/Login/Logout";;
 
 
 

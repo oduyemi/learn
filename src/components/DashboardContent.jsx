@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../UserContext";
 import { Box } from "@mui/material";
 import Button from "./elements/Button";
 import { Link } from "react-router-dom";
@@ -7,6 +8,8 @@ import { CoursesPage } from "./CoursesPage";
 
 
 export const DashboardContent = () => {
+    const { user, handleLogout } = useContext(UserContext);
+
     return (
         <Box className="flex">
             <Box className="flex w-2/5 md:w-1/4 h-screen">
@@ -45,7 +48,7 @@ export const DashboardContent = () => {
                         <span className="font-semibold">Setting</span>
                         </li>
                         <Link to="https://progrowing.org/">
-                            <Button>Learn More</Button>
+                            <Button onClick={handleLogout}>Logout</Button>
                         </Link>
                     </ul>
                 </Box>
