@@ -27,7 +27,7 @@ export const DashboardContent = () => {
                 type: "error",
                 message: "You need to login first!",
             });
-            window.location.href="/admin/signin";
+            window.location.href="/login";
         } else {
             setUserDetails({
                 userID: user.userID || "",
