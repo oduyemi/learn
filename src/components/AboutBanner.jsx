@@ -54,44 +54,9 @@ export const AboutBanner = () => {
                      
                     </Box>
                     <Box className="mt-6">
-                    <Box 
-                        sx={{display:"flex", justifyContent: "center", alignItems: "center"}}
-                        className="mx-auto middlebox"
-                    >
-                        <Box margin="10px" maxWidth="sm">
-                            <img src={require("../assets/images/photos/dev1.jpg")} alt="dev" />
-                        </Box>
-
-                        <Box maxWidth="sm">
-                            <Typography 
-                                variant="h1" 
-                                className="font-semibold animate__animated animated__pulse text-ppl pl-2 tracking-wide"
-                                sx={{ fontSize: "xx-large" }}
-                                gutterBottom
-                            >
-                                Our
-                                <span><h1 className="text-yel inline"> Mission</h1></span>
-                            </Typography>
-                            <Typography
-                                variant="h6" 
-                                paragraph
-                                className="mb-4 text-black"
-                                sx={{fontSize: "18px", fontWeight: 400}}
-                                margin="10px"
-                            >
-                                Our mission is simple: to inspire and empower individuals
-                                to harness their unique talents and creative potential.
-                                We provide a platform where seasoned professionals and
-                                budding talents come together, share knowledge, and push
-                                the boundaries of what's possible.
-                            </Typography>
-                        </Box>                        
+                        <WhatWeDo />                        
                     </Box>
-                    <WhatWeDo />
-                    <Box className="mt-6">
-                    <Box 
-                        className="mx-auto"
-                    >
+                    <Box className="mx-auto">
                         <Box maxWidth="md" className="mx-auto">
                             <Typography 
                                 variant="h1" 
@@ -129,10 +94,41 @@ export const AboutBanner = () => {
                             </Typography>
                         </Box>                    
                     </Box>
-                </Box>
-                    </Box>
                     <ContentFiller />
                 </Box>
+                {/* <Box 
+                            sx={{display:"flex", justifyContent: "center", alignItems: "center"}}
+                            className="mx-auto middlebox"
+                        >
+                            <Box margin="10px" maxWidth="sm">
+                                <img src={require("../assets/images/photos/dev1.jpg")} alt="dev" />
+                            </Box>
+
+                            <Box maxWidth="sm">
+                                <Typography 
+                                    variant="h1" 
+                                    className="font-semibold animate__animated animated__pulse text-ppl pl-2 tracking-wide"
+                                    sx={{ fontSize: "xx-large" }}
+                                    gutterBottom
+                                >
+                                    Our
+                                    <span><h1 className="text-yel inline"> Mission</h1></span>
+                                </Typography>
+                                <Typography
+                                    variant="h6" 
+                                    paragraph
+                                    className="mb-4 text-black"
+                                    sx={{fontSize: "18px", fontWeight: 400}}
+                                    margin="10px"
+                                >
+                                    Our mission is simple: to inspire and empower individuals
+                                    to harness their unique talents and creative potential.
+                                    We provide a platform where seasoned professionals and
+                                    budding talents come together, share knowledge, and push
+                                    the boundaries of what's possible.
+                                </Typography>
+                            </Box>
+                        </Box> */}
             </Box>
         
 
