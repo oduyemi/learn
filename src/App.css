@@ -115,6 +115,10 @@ body{
     flex-direction: column;
   }
 
+  .middleboxupside{
+    flex-direction: column-reverse;
+  }
+
   .title{
     font-size: small !important;
   }

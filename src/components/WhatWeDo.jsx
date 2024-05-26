@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 
 export const WhatWeDo = () => {
     return(
-        <Box class="bg-blu">
+        <Box class="bg-ppl">
             <section id="features"
                 class="relative block px-6 py-10 md:py-20 md:px-10  border-t border-b border-neutral-900 bg-neutral-900/30">
 
@@ -16,26 +16,12 @@ export const WhatWeDo = () => {
                     <span class="text-gray-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
                     What we do
                     </span>
-                    <h2
-                        class="block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                        Build a Website That Your Customers Love
-                    </h2>
-                    <p
-                        class="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                        Our templates allow for maximum customization. No technical skills required – our intuitive design tools
-                        let
-                        you get the job done easily.
-                    </p>
                 </Box>
 
 
                 <Box class="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3">
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                           
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Innovation Hub</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Innovation Hub</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             At the heart of ProGrowing is our Innovation Hub—a dynamic space where
                             ideas come to life. We host a variety of projects that challenge
@@ -46,12 +32,8 @@ export const WhatWeDo = () => {
                     </Box>
 
 
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                            
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Mentorship</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Mentorship</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             We believe that mentorship is a cornerstone of professional growth. Our
                             mentorship program pairs experienced professionals with newcomers,
@@ -62,12 +44,8 @@ export const WhatWeDo = () => {
                     </Box>
 
 
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                            
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Learning Center</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Learning Center</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             Our Learning Center is a comprehensive learning management system (LMS)
                             designed to equip mentees with the skills and knowledge they need to excel.
@@ -76,12 +54,8 @@ export const WhatWeDo = () => {
                         </p>
                     </Box>
 
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                           
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Forum</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Forum</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             The ProGrowing Forum is a vibrant community space where members can discuss
                             ideas, share experiences, and seek advice. It's a place for collaboration
@@ -90,12 +64,8 @@ export const WhatWeDo = () => {
                     </Box>
 
 
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                            
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Taskify</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Taskify</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             Taskify is our unique task management tool that enables mentors to 
                             assign tasks to mentees and track their progress. Mentees can report 
@@ -105,12 +75,8 @@ export const WhatWeDo = () => {
                     </Box>
 
 
-                    <Box class="rounded-md border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
-                        <Box class="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border "
-                            style={{ backgroundImage: "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)", borderColor: "rgb(93, 79, 240)" }}>
-                            
-                        </Box>
-                        <h3 class="mt-6 text-gray-400">Community Engagement</h3>
+                    <Box class="rounded-md border border-neutral-800 bg-yel/50 p-8 text-center shadow">
+                        <h3 class="mt-6 head text-2xl text-gray-400">Community Engagement</h3>
                         <p class="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                             ProGrowing is more than just a platform; it's a community. We will
                             host regular events, workshops, and webinars to keep our members

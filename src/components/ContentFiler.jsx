@@ -11,7 +11,7 @@ export const ContentFiller = () => {
                 <span><h1 className="text-yel inline">Gro</h1></span>wing community?
             </h1>
             <Link to="https://chat.whatsapp.com/CwXJQItHh3d6yviZlTa8Iz/">
-                <Button className="text-white">Join WhatsApp</Button>
+                <Button className="text-white">WhatsApp Community</Button>
             </Link>
         </Box>
     )
