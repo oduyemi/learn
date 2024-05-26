@@ -1,12 +1,18 @@
-
-import React, { useState} from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../UserContext";
 import logo from "../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
+import { Box, Typography } from "@mui/material";
 import Button from "./elements/Button";
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+
+
 
 
 const Header = () => {
+    const { user, handleLogout } = useContext(UserContext);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const userDetails = JSON.parse(localStorage.getItem("userDetails")); 
 
     const toggleMobileMenu = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,7 +34,24 @@ const Header = () => {
                 <Link to="/about" className="mobile-menu-link text-l" onClick={closeMobileMenu}>About</Link>
                 <Link to="/courses" className="mobile-menu-link text-l" onClick={closeMobileMenu}>Courses</Link>
                 <Link to="/contact" className="mobile-menu-link text-l" onClick={closeMobileMenu}>Contact</Link>
-                <Link to="/login" className="mobile-menu-link"onClick={closeMobileMenu}><Button>Login</Button></Link>
+                {userDetails ? ( 
+                    <Box className="cta">
+                        <Typography variant="h6" sx={{ fontWeight: "300", fontSize: "16px" }} paragraph className="inline font-light text-l">
+                            {userDetails.fname} &nbsp; {userDetails.lname}
+                        </Typography> &emsp; &emsp;
+                        <span>
+                            <PowerSettingsNewIcon
+                                onClick={handleLogout}
+                                className="inline text-red-600 hover:text-carton"
+                            />
+                        </span>
+                    </Box>
+                    ) : (
+                        <>
+                        <Link to="/login" className="mobile-menu-link" onClick={closeMobileMenu}><Button>Login</Button></Link>  
+                        </>  
+                    )}  
+
             </div>
           </div>
         )
@@ -67,7 +90,24 @@ const Header = () => {
                         <li><Link to="/contact" className="text-l">Contact</Link></li>
                     </ul>
                     <div className="header-extras flex items-center justify-between space-x-6 pr-8 mt-[-5%]">
-                        <Link to="/login" className="text-l"><Button>Login</Button></Link>      
+                        
+                    {userDetails ? ( 
+                          <Box className="cta">
+                              <Typography variant="h6" sx={{ fontWeight: "300", fontSize: "16px" }} paragraph className="inline font-light text-l">
+                                  {userDetails.fname} &nbsp; {userDetails.lname}
+                              </Typography> &emsp; &emsp;
+                              <span>
+                                  <PowerSettingsNewIcon
+                                      onClick={handleLogout}
+                                      className="inline text-red-600 hover:text-carton"
+                                  />
+                              </span>
+                          </Box>
+                            ) : (
+                                <>
+                                <Link to="/login" className="text-l"><Button>Login</Button></Link>  
+                                </>  
+                            )}  
                     </div>    
                 </div>
             </nav>
