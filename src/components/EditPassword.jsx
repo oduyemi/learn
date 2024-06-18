@@ -129,7 +129,7 @@ export const EditPassword = () => {
                     </Box>
                 </nav>
                 <Box className="container mx-auto my-24">
-                    <Box className="flex flex-col max-w-3xl mx-auto p-5 bg-white rounded-md">
+                    <Box className="flex flex-col max-w-3xl mx-auto p-5 rounded-md">
                         <form onSubmit={handleSubmit}>
                             <Box className="mb-6">
                                 <label htmlFor="oldPassword" className="block mb-2 text-sm text-gray-600">Old Password</label>
