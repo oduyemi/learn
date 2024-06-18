@@ -8,7 +8,11 @@ import Contact from "../pages/Contact";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
-import Logout from "../pages/Login/Logout";;
+import Logout from "../pages/Login/Logout";import ProfilePage from "../pages/Profile";
+import { EditProfile } from "../components/EditProfile"
+import { EditPassword } from "../components/EditPassword";
+import { UserCourses } from "../components/UserCourses";
+;
 
 
 
@@ -25,6 +29,10 @@ const Navigation = () => {
                     <Route path="/join" element={<Register />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/profile" element={<ProfilePage />} />
+                    <Route path="/update-profile" element={<EditProfile />} />
+                    <Route path="/update-password" element={<EditPassword />} />
+                    <Route path="/my-courses" element={<UserCourses />} />
                     <Route path="/logout" element={<Logout/>} />
                 </Routes>
            

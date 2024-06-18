@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useContext} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { UserContext } from "../UserContext";
-import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
 import Button from "./elements/Button";
-import { CoursesPage } from "./CoursesPage";
 import defaultAvatar from "../assets/images/photos/avatar.png";
 
 
-
-export const DashboardContent = () => {
+export const UserCourses = () => {
     const { user, handleLogout } = useContext(UserContext);
     const [flashMessage, setFlashMessage] = useState(null)
     const [userDetails, setUserDetails] = useState({
@@ -40,12 +38,11 @@ export const DashboardContent = () => {
             });
             }
         }, [user]);
-
-    return (
+    return(
         <Box className="flex">
             <Box className="flex w-2/5 md:w-1/4 h-screen">
                 <Box className="mx-auto py-10">
-                <ul>
+                    <ul>
                         <li className="flex space-x-2 mt-10 cursor-pointer hover:text-[#EC5252] duration-150">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -91,19 +88,71 @@ export const DashboardContent = () => {
                         <p>{userDetails.fname || user.fname} {userDetails.lname || user.lname}</p>
                     </Box>
                 </nav>
-                <Box className="w-full">
-                    <h1 className="text-2xl text-blu font-semibold">All Courses</h1>
-                    <CoursesPage />
-                    {/* <Box className="md:flex mt-4 space-x-4 justify-center">
-                        <Box className="h-96 bg-gradient-to-r from-indigo-600 to-purple-500 flex items-end rounded-md">
-                            <p className="text-lg text-indigo-50">How to do Basic Jumping and how to landing safely</p>
+            <Box className="container mb-20 pt-24 h-screen">
+            <Box>
+
+                <Box className="bg-ppl text-white relative shadow rounded-lg w-5/6 md:w-5/6  lg:w-4/6 xl:w-3/6 mx-auto">
+                    <Box className="flex justify-center">
+                            <img src={userDetails.img || user.img} alt="" className="rounded-full mx-auto absolute -top-20 w-32 h-32 shadow-md border-4 border-white transition duration-200 transform hover:scale-110" />
+                    </Box>
+                    
+                    <Box className="mt-16">
+                        <h1 className="font-bold text-center text-3xl text-gray-200"></h1>
+                        <p className="text-center text-sm text-gray-400 font-medium">{userDetails.username || user.username}</p>
+                        <p>
+                            <span>
+                                
+                            </span>
+                        </p>
+                        <Box className="my-5 px-6">
+                            <Link to="/update-profile" className="text-gray-600 block rounded-lg text-center font-medium leading-6 px-6 py-3 bg-yel hover:bg-whi hover:text-black">Edit Profile</Link>
                         </Box>
-                        <Box className="h-96 bg-gradient-to-r from-yellow-600 to-red-500 flex items-end rounded-md">
-                            <p className="text-lg text-indigo-50">How to do Basic Jumping and how to landing safely</p>
+                        <Box className="flex justify-between items-center my-5 px-6">
+                            <Link to="" className="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">email</Link>
+                            <Link to="" className="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">phone</Link>
+                            <Link to="" className="text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition duration-150 ease-in font-medium text-sm text-center w-full py-3">Joined since</Link>
                         </Box>
-                    </Box> */}
+
+                        <Box className="w-full">
+                            <h3 className="font-medium text-gray-200 text-left px-6">Courses taken</h3>
+                            <Box className="mt-5 w-full flex flex-col items-center overflow-hidden text-sm">
+                                <Link to="#" className="w-full border-t border-gray-100 text-gray-400 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                    <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt="" className="rounded-full h-6 shadow-md inline-block mr-2" />
+                                        Updated his status
+                                        <span className="text-gray-300 text-xs"> Started 5 days ago</span>
+                                </Link>
+
+                                <Link to="#" className="w-full border-t border-gray-100 text-gray-400 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                    <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt="" className="rounded-full h-6 shadow-md inline-block mr-2" />
+                                        Added new profile picture
+                                        <span className="text-gray-300 text-xs"> Started 3 months ago</span>
+                                </Link>
+
+                                <Link to="#" className="w-full border-t border-gray-100 text-gray-400 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                    <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt="" className="rounded-full h-6 shadow-md inline-block mr-2" />
+                                    Posted new article in <span className="font-bold">#Web Dev</span>
+                                    <span className="text-gray-300 text-xs"> Started 4 weeks ago</span>
+                                </Link>
+
+                                <Link to="#" className="w-full border-t border-gray-100 text-gray-400 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150">
+                                    <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt="" className="rounded-full h-6 shadow-md inline-block mr-2" />
+                                    Edited website settings
+                                    <span className="text-gray-300 text-xs"> Started 1 day ago</span>
+                                </Link>
+
+                                <Link to="#" className="w-full border-t border-gray-100 text-gray-400 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden">
+                                    <img src="https://avatars0.githubusercontent.com/u/35900628?v=4" alt="" className="rounded-full h-6 shadow-md inline-block mr-2" />
+                                    Added new rank
+                                    <span className="text-gray-300 text-xs"> Started 6 weeks ago</span>
+                                </Link>
+                                
+                            </Box>
+                        </Box>
+                    </Box>
                 </Box>
-            </main>
+            </Box>
         </Box>
-    );
-};
+        </main>
+    </Box>
+    )
+}
