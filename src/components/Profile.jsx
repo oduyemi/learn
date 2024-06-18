@@ -98,7 +98,7 @@ export const Profile = () => {
                         </svg>
                     </Box>
                     <Box className="flex items-center">
-                        <img className="w-8 rounded-full" src={userDetails.img || user.img} alt="User image" /> &nbsp;
+                        <img className="w-8 rounded-full" src={userDetails.img} alt="User image" /> &nbsp;
                         <p>{userDetails.fname || user.fname} {userDetails.lname || user.lname}</p>
                     </Box>
                 </nav>
