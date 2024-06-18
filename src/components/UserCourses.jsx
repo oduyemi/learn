@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { UserContext } from "../UserContext";
 import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./elements/Button";
 import defaultAvatar from "../assets/images/photos/avatar.png";
 
 
 export const UserCourses = () => {
     const { user, handleLogout } = useContext(UserContext);
-    const [flashMessage, setFlashMessage] = useState(null)
+    const [flashMessage, setFlashMessage] = useState(null);
+    const navigate = useNavigate();
     const [userDetails, setUserDetails] = useState({
         userID: "",
         fname: "",
@@ -25,7 +26,7 @@ export const UserCourses = () => {
                 type: "error",
                 message: "You need to login first!",
             });
-            window.location.href="/login";
+            navigate("/login");
         } else {
             setUserDetails({
                 userID: user.userID || "",

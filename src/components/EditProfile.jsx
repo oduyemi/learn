@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { UserContext } from "../UserContext";
 import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./elements/Button";
 import axios from "axios";
 import defaultAvatar from "../assets/images/photos/avatar.png";
@@ -9,6 +9,7 @@ import defaultAvatar from "../assets/images/photos/avatar.png";
 export const EditProfile = () => {
   const { user, setUser, handleLogout } = useContext(UserContext);
   const [flashMessage, setFlashMessage] = useState(null);
+  const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState({
     userID: "",
     fname: "",
@@ -27,7 +28,7 @@ export const EditProfile = () => {
         message: "You need to login first!",
       });
       localStorage.setItem("requestedPath", requestedPath);
-      window.location.href = "/login";
+      navigate("/login");
     } else {
       setUserDetails({
         fname: user.fname || "",
@@ -67,7 +68,7 @@ export const EditProfile = () => {
           message: "User details updated successfully!",
         });
         setTimeout(() => {
-          window.location.href = "/dashboard";
+          navigate("/dashboard");
         }, 2000);
       } else {
         setFlashMessage({

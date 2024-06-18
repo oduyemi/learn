@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import Button from "./elements/Button";
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -9,6 +10,7 @@ export const RegisterForm = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [flashMessage, setFlashMessage] = useState(null);
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         fname: "",
         lname: "",
@@ -38,7 +40,7 @@ export const RegisterForm = () => {
             });
 
             setTimeout(() => {
-                window.location.href = "/login";
+                navigate("/login");
             }, 2000);
         } catch (error) {
             console.error("Error:", error);

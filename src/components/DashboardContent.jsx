@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { UserContext } from "../UserContext";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import Button from "./elements/Button";
 import { CoursesPage } from "./CoursesPage";
@@ -9,6 +9,7 @@ import defaultAvatar from "../assets/images/photos/avatar.png";
 export const DashboardContent = () => {
     const { user, handleLogout } = useContext(UserContext);
     const [flashMessage, setFlashMessage] = useState(null);
+    const navigate = useNavigate();
     const [userDetails, setUserDetails] = useState({
         userID: "",
         fname: "",
@@ -26,7 +27,7 @@ export const DashboardContent = () => {
                 message: "You need to login first!",
             });
             setTimeout(() => {
-                window.location.href = "/login";
+                navigate("/login");
             }, 2000);
         } else {
             setUserDetails({
