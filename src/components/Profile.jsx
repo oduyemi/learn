@@ -28,7 +28,7 @@ export const Profile = () => {
         username: "",
         email: "",
         phone: "",
-        img: "",
+        img: defaultAvatar,
         createdAt: ""
     });
 
