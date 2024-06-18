@@ -160,7 +160,7 @@ export const EditProfile = () => {
         <Box className="flex flex-col md:flex-row shadow mt-20">
               <Box maxWidth="sm" className="my-7">
                 <img 
-                    src={userDetails.img || user.img} 
+                    src={userDetails.img}
                     alt="" 
                     className="rounded-full w-40 mt-8 ml-auto
                     h-40 shadow-md border-4 border-white transition 
